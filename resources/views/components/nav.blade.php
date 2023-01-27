@@ -126,29 +126,6 @@
             @endguest
         </div>
     </div>
-    
-    {{-- <div class="navbar-nav col-4 d-none d-lg-flex justify-content-end">
-        @guest
-        <div class="d-flex">
-            <a class="nav-link txt-CW" href="{{route('register')}}">{{__('ui.register')}} <i class="fa-solid fa-address-card"></i></a>
-            <a class="nav-link txt-CW ms-2 ms-lg-0" href="{{route('login')}}">{{__('ui.login')}} <i class="fa-solid fa-user"></i></a>            
-        </div>
-        @else
-        <a class="nav-link txt-CW" href="{{route('profilePage')}}">{{__('ui.welcome')}} {{Auth::user()->name}}</a>
-        @if (Auth::user()->is_revisor)
-        <a class="nav-link txt-CW" href="{{route('revisionPage')}}">{{__('ui.RI')}}  <i class="fa-solid fa-screwdriver-wrench"></i></a>          
-        @else
-        <a class="nav-link txt-CW" href="{{route('workWithUs')}}">{{__('ui.WWU')}}  </a>  
-        @endif
-        <a class="nav-link txt-CW" href="{{ route('logout') }}"
-        onclick="event.preventDefault();
-        document.getElementById('logout-form').submit();">Logout</a>
-        <form id="logout-form" action="{{route('logout')}}" method="POST" class="d-none">
-            @csrf
-        </form>
-        @endguest
-    </div> --}}
-    
     <div class="col-4 justify-content-end collapse navbar-collapse-custom" id="navbarNavDropdown">
         @guest
         <a class="txt-CW px-lg-1 py-1 py-lg-0 nav-link yellowHover" href="{{route('login')}}">{{__('ui.sell')}} <i class="fa-solid fa-handshake"></i></a>
